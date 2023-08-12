@@ -1,0 +1,13 @@
+local players = game:GetService("Players")
+local player = players.LocalPlayer
+local character = player.Character
+
+
+character:WaitForChild("Humanoid").Died:Connect(function()
+    local OldCFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+    player.CharacterAdded:Wait()
+
+    wait(.5)
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = OldCFrame
+    loadstring(game:HttpGet(''))()
+end)
