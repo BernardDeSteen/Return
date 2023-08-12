@@ -9,5 +9,5 @@ character:WaitForChild("Humanoid").Died:Connect(function()
 
     wait(.5)
     game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = OldCFrame
-    loadstring(game:HttpGet(''))()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/BernardDeSteen/Return/main/Returning'))()
 end)
